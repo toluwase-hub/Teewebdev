@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { MdOutlineMail } from "react-icons/md";
 import { FaWhatsapp } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 import { MdCleaningServices } from "react-icons/md";
 import { FiPhoneCall } from "react-icons/fi";
+import ScrollReveal from 'scrollreveal';
 
 const Contactusherosection = () => {
 
@@ -20,16 +21,27 @@ const Contactusherosection = () => {
 
     const mailtolink = `mailto:${emailaddress}?subject=${subject}`;
 
+     useEffect(() => {
+          ScrollReveal().reveal(".reveal", {
+            distance: "500px",
+            duration: 1200,
+            easing: "ease-out",
+            origin: "left",
+            interval: 600,
+            reset: false,
+          });
+        }, []);
+
 
   return (
     <>
-    <div className='relative  '> 
+    <div id="gotocontact" className='relative   '> 
 
     <img src="/images/mainheroback.jpg" className=' w-screen h-140 lg:h-170 object-cover' alt="" />
    
      <div className="absolute inset-0 bg-black/80"></div>
       <div className="contains absolute inset-0   items-center   flex justify-between    gap-20 text-white leading-relaxed">
-            <div className='mt-8 '>
+            <div className='mt-8 reveal'>
             <h1 className='text-6xl font-medium lg:text-7xl lg:font-bold' >CONTACT TEE  <span className='italic text-[#D4A] '>WEBSITE <br /></span> CODER </h1>
             <h5 className='text-xl lg:text-2xl py-3'>
                 Reach Out For Inquiries Or Support.

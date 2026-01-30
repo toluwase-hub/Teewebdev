@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { MdOutlineMail } from "react-icons/md";
 import { FaWhatsapp } from "react-icons/fa";
+import ScrollReveal from 'scrollreveal';
 
 const Herosection = () => {
 
@@ -17,6 +18,18 @@ const Herosection = () => {
 
     const mailtolink = `mailto:${emailaddress}?subject=${subject}`;
 
+
+    useEffect(() => {
+      ScrollReveal().reveal(".reveal", {
+        distance: "500px",
+        duration: 1200,
+        easing: "ease-out",
+        origin: "left",
+        interval: 600,
+        reset: false,
+      });
+    }, []);
+
   return (
     <>
     <div className='relative  '> 
@@ -25,7 +38,7 @@ const Herosection = () => {
    
      <div className="absolute inset-0 bg-black/80"></div>
       <div className="contains absolute inset-0   items-center   flex justify-between    gap-20 text-white leading-relaxed">
-            <div className='mt-8 '>
+            <div className='mt-8 reveal'>
             <h1 className='text-7xl font-medium lg:font-bold' > TEE  <span className='italic text-[#D4A] '>WEBSITE <br /></span> CODER </h1>
             <h5 className='text-xl lg:text-2xl py-3'>
                 We Are The Best <span>let Handle Your </span> <span className='font-bold'>Website</span> Design and, development For You.

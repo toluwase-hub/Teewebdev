@@ -1,11 +1,57 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FaHome } from "react-icons/fa";
 import { FaRocketchat } from "react-icons/fa";
 import { MdWhatsapp } from "react-icons/md";
 import { MdOutlineMail } from "react-icons/md";
 import { FiPhoneCall } from "react-icons/fi";
+import ScrollReveal from "scrollreveal";
 
 const ContactusReachout = () => {
+
+   useEffect(() => {
+        ScrollReveal().reveal(".reveal14", {
+          distance: "400px",
+          duration: 1000,
+          easing: "ease-out",
+          origin: "bottom",
+          interval: 400,
+          reset: false,
+        });
+      }, []);
+
+       useEffect(() => {
+      ScrollReveal().reveal(".reveal15", {
+        distance: "400px",
+        duration: 1000,
+        easing: "ease-out",
+        origin: "bottom",
+        interval: 400,
+        reset: false,
+      });
+    }, []);
+
+     useEffect(() => {
+      ScrollReveal().reveal(".reveal16", {
+        distance: "500px",
+        duration: 1200,
+        easing: "ease-out",
+        origin: "left",
+        interval: 600,
+        reset: false,
+      });
+    }, []);
+
+     useEffect(() => {
+      ScrollReveal().reveal(".reveal17", {
+        distance: "500px",
+        duration: 1200,
+        easing: "ease-out",
+        origin: "right",
+        interval: 600,
+        reset: false,
+      });
+    }, []);
+
   // chat us on whatsapp link
   const PhoneNumber = "+2349043933210";
   const message =
@@ -28,7 +74,7 @@ const ContactusReachout = () => {
       </h1>
       <div className="flex flex-col  items-center gap-6">
         <div className="border-t-3 mt-3  border-[#D4A] w-20 "></div>
-        <h1 className="text-xl lg:text-xl font-light text-black/80 text-center">
+        <h1 className="reveal14 text-xl lg:text-xl font-light text-black/80 text-center">
           Tee Website is committed to delivering reliable and innovative digital
           solutions tailored to your needs. located in Oyo,Oyo State,Nigeria. We
           are available 24/7 providing professional support and Quality service
@@ -37,7 +83,7 @@ const ContactusReachout = () => {
       </div>
 
       <div className="py-5 pt-10">
-        <div>
+        <div className="reveal14">
           <iframe
             className="rounded-lg"
             src={mapScr}
@@ -59,7 +105,7 @@ const ContactusReachout = () => {
               <div className="group-hover:text-[#D4A] transition-all duration-200">
                 <FaHome size={30} />
               </div>
-              <div>
+              <div className="reveal15">
                 <h1 className="font-bold">Address</h1>
                 <p className="hover:text-[#D4A] transition-all duration-200 hover:underline">
                   Sabo Area Oyo,Oyo State Nigeria.
@@ -71,7 +117,7 @@ const ContactusReachout = () => {
               <div className="group-hover:text-[#D4A] transition-all duration-200">
                 <MdOutlineMail size={30} />
               </div>
-              <div>
+              <div className="reveal15">
                 <h1 className="font-bold">Email</h1>
                 <p className="hover:text-[#D4A] transition-all duration-200 ">
                   Olaniyitoluwase@gmail.com
@@ -83,7 +129,7 @@ const ContactusReachout = () => {
               <div className="group-hover:text-[#D4A] transition-all duration-200">
                 <FiPhoneCall size={30} />
               </div>
-              <div>
+              <div className="reveal15">
                 <h1 className="font-bold">Phone</h1>
                 <p className="hover:text-[#D4A] transition-all duration-200">
                   09043933210
@@ -92,7 +138,7 @@ const ContactusReachout = () => {
             </div>
           </div>
 
-          <div className="flex gap-4  group hover:bg-[#f5e0ee] border border-[#D4A]   transition-all duration-300 py-10 px-5 rounded-3xl items-center">
+          <div className="reveal16 flex gap-4  group hover:bg-[#f5e0ee] border border-[#D4A]   transition-all duration-300 py-10 px-5 rounded-3xl items-center">
             <div>
               <MdOutlineMail
                 size={60}
@@ -113,7 +159,7 @@ const ContactusReachout = () => {
             </div>
           </div>
 
-          <div className="flex gap-4  py-10 px-5 rounded-3xl   group hover:bg-green-50  border border-green-600 transition-all duration-300 items-center">
+          <div className="reveal17 flex gap-4  py-10 px-5 rounded-3xl   group hover:bg-green-50  border border-green-600 transition-all duration-300 items-center">
             <div>
               <MdWhatsapp
                 size={60}

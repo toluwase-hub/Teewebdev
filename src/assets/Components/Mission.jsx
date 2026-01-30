@@ -1,14 +1,36 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { MdVisibility } from "react-icons/md";
 import { PiUserFocus } from "react-icons/pi";
+import ScrollReveal from "scrollreveal";
 
 const Mission = () => {
+  useEffect(() => {
+    ScrollReveal().reveal(".reveal4", {
+      distance: "500px",
+      duration: 1200,
+      easing: "ease-out",
+      origin: "left",
+      interval: 600,
+      reset: false,
+    });
+  }, []);
+
+   useEffect(() => {
+      ScrollReveal().reveal(".reveal5", {
+        distance: "500px",
+        duration: 1200,
+        easing: "ease-out",
+        origin: "right",
+        interval: 600,
+        reset: false,
+      });
+    }, []);
   return (
     <div className="bg-black/10 py-20">
       <div className="contains">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          <div className="shadow-xl bg-white px-6 py-8 rounded-3xl flex flex-col justify-center items-center gap-3 group hover:border border-blue-300 hover:shadow-2xl  transition-all duration-300">
-            <div className="text-white transition-all duration-300 group-hover:scale-110 bg-blue-600 py-2 px-2 rounded-2xl">
+          <div className="reveal4 shadow-xl bg-white px-6 py-8 rounded-3xl flex flex-col justify-center items-center gap-3 group hover:border border-blue-300 hover:shadow-2xl  transition-all duration-300">
+            <div className="text-white transition-all duration-300 group-hover:scale-110 bg-blue-600 py-2 px-2 rounded-2xl ">
               <PiUserFocus size={50} />
             </div>
             <h1 className="text-3xl font-bold text-black/90 ">Our Mission</h1>
@@ -31,7 +53,7 @@ const Mission = () => {
               </h1>
             </div>
           </div>
-          <div className="shadow-xl bg-white px-6 py-8 rounded-3xl flex flex-col justify-center items-center gap-3 group hover:border border-green-300 hover:shadow-2xl  transition-all duration-300">
+          <div className="reveal5 shadow-xl bg-white px-6 py-8 rounded-3xl flex flex-col justify-center items-center gap-3 group hover:border border-green-300 hover:shadow-2xl  transition-all duration-300">
             <div className="text-white bg-green-500 py-2 px-2 rounded-2xl transition-all duration-300 group-hover:scale-110">
               <MdVisibility size={50} />
             </div>

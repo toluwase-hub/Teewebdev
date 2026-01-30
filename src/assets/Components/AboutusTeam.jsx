@@ -1,6 +1,18 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import ScrollReveal from "scrollreveal";
 
 const AboutusTeam = () => {
+
+   useEffect(() => {
+        ScrollReveal().reveal(".reveal13", {
+          distance: "400px",
+          duration: 1000,
+          easing: "ease-out",
+          origin: "bottom",
+          interval: 400,
+          reset: false,
+        });
+      }, []);
   const [ShowAboutid, setShowAboutid] = useState(null);
 
   const HandleShowAbout = (id) => {
@@ -85,11 +97,11 @@ const AboutusTeam = () => {
         <div className="border-t-3  border-[#D4A] w-20 "></div>
       </div>
 
-      <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-5  py-15">
+      <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-5  py-15 ">
         {TeamMembers.map((Member) => (
           <div
             key={Member.id}
-            className={`  flex  flex-col gap-2 shadow-2xl px-2 py-5 rounded-3xl items-center justify-center  hover:shadow-xl relative`}
+            className={` reveal13  flex  flex-col gap-2 shadow-2xl px-2 py-5 rounded-3xl items-center justify-center  hover:shadow-xl relative`}
           >
             <div className="">{Member.image}</div>
             <h1 className="font-medium text-3xl">{Member.teamName}</h1>

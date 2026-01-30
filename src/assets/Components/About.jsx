@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import ScrollReveal from "scrollreveal";
 
 const About = () => {
 
@@ -15,6 +16,28 @@ const About = () => {
 
     const mailtolink = `mailto:${emailaddress}?subject=${subject}`;
 
+     useEffect(() => {
+          ScrollReveal().reveal(".reveal1", {
+            distance: "500px",
+            duration: 1200,
+            easing: "ease-out",
+            origin: "bottom",
+            interval: 600,
+            reset: false,
+          });
+        }, []);
+
+         useEffect(() => {
+      ScrollReveal().reveal(".reveal2", {
+        distance: "500px",
+        duration: 1200,
+        easing: "ease-out",
+        origin: "left",
+        interval: 600,
+        reset: false,
+      });
+    }, []);
+
   return (
     <div className="mt-6 contains lg:py-15 py-5">
       <h1 className="text-center font-bold text-[#D4A] text-xl lg:text-2xl mb-2">
@@ -28,7 +51,7 @@ const About = () => {
       </div>
 
       <div className="flex flex-col lg:flex-row gap-15 mt-15">
-        <div>
+        <div className="reveal2">
           <img
             src="/images/mainheroback.jpg"
             className="object-cover hover:scale-102 transition-all duration-150 lg:w-200 w-full h-80  "
@@ -36,7 +59,7 @@ const About = () => {
           />
         </div>
 
-        <div>
+        <div className="reveal1">
           <div>
             <h1 className="text-2xl font-medium pb-5">
               Frontend & Backend Web Developer.

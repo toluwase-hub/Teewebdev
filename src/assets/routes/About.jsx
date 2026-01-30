@@ -7,6 +7,7 @@ import AskedQuestion from '../Components/AskedQuestion'
 import Aboutherosection from '../Components/Aboutherosection'
 import Aboutusaboutsec from '../Components/Aboutusaboutsec'
 import AboutusTeam from '../Components/AboutusTeam'
+import Loading from '../Components/Loading'
 
 const About = () => {
   return (
@@ -17,6 +18,7 @@ const About = () => {
       <AboutusTeam />
       <AskedQuestion />
       <Chatus />
+      {/* <Loading /> */}
       
     </div>
   )

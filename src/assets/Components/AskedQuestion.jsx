@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import { IoIosArrowUp } from "react-icons/io";
+import ScrollReveal from "scrollreveal";
 
 const AskedQuestion = () => {
   const [que1, setQue1] = useState(false);
@@ -10,6 +11,17 @@ const AskedQuestion = () => {
   const [que5, setQue5] = useState(false);
   const [que6, setQue6] = useState(false);
   const [que7, setQue7] = useState(false);
+
+   useEffect(() => {
+        ScrollReveal().reveal(".reveal8", {
+          distance: "400px",
+          duration: 1200,
+          easing: "ease-out",
+          origin: "bottom",
+          interval: 400,
+          reset: false,
+        });
+      }, []);
 
   return (
     <div className="contains py-15 ">
@@ -26,7 +38,7 @@ const AskedQuestion = () => {
       <div className="flex flex-col gap-5 pt-20 max-w-250 m-auto">
         <div
           onClick={() => setQue1(!que1)}
-          className=" items-center  shadow-lg rounded-2xl px-5 py-5 bg-black/3 group hover:shadow-2xl transition-all duration-300"
+          className="reveal8 items-center  shadow-lg rounded-2xl px-5 py-5 bg-black/3 group hover:shadow-2xl transition-all duration-300"
         >
           <div className="flex justify-between  ">
             <h1 className="font-medium text-md lg:text-xl group-hover:text-[#D4A]">
@@ -58,7 +70,7 @@ const AskedQuestion = () => {
 
         <div
           onClick={() => setQue2(!que2)}
-          className=" items-center  shadow-lg rounded-2xl px-5 py-5 bg-black/3 group hover:shadow-2xl transition-all duration-300"
+          className="reveal8 items-center  shadow-lg rounded-2xl px-5 py-5 bg-black/3 group hover:shadow-2xl transition-all duration-300"
         >
           <div className="flex justify-between  ">
             <h1 className="font-medium text-md lg:text-xl group-hover:text-[#D4A]">
@@ -90,7 +102,7 @@ const AskedQuestion = () => {
 
         <div
           onClick={() => setQue3(!que3)}
-          className=" items-center  shadow-lg rounded-2xl px-5 py-5 bg-black/3 group hover:shadow-2xl transition-all duration-300"
+          className=" reveal8 items-center  shadow-lg rounded-2xl px-5 py-5 bg-black/3 group hover:shadow-2xl transition-all duration-300"
         >
           <div className="flex justify-between  ">
             <h1 className="font-medium text-md lg:text-xl group-hover:text-[#D4A]">
@@ -121,7 +133,7 @@ const AskedQuestion = () => {
 
         <div
           onClick={() => setQue4(!que4)}
-          className=" items-center  shadow-lg rounded-2xl px-5 py-5 bg-black/3 group hover:shadow-2xl transition-all duration-300"
+          className=" reveal8 items-center  shadow-lg rounded-2xl px-5 py-5 bg-black/3 group hover:shadow-2xl transition-all duration-300"
         >
           <div className="flex justify-between  ">
             <h1 className="font-medium text-md lg:text-xl group-hover:text-[#D4A]">
@@ -152,7 +164,7 @@ const AskedQuestion = () => {
 
         <div
           onClick={() => setQue5(!que5)}
-          className=" items-center  shadow-lg rounded-2xl px-5 py-5 bg-black/3 group hover:shadow-2xl transition-all duration-300"
+          className="reveal8 items-center  shadow-lg rounded-2xl px-5 py-5 bg-black/3 group hover:shadow-2xl transition-all duration-300"
         >
           <div className="flex justify-between  ">
             <h1 className="font-medium text-md lg:text-xl group-hover:text-[#D4A]">
@@ -183,7 +195,7 @@ const AskedQuestion = () => {
 
         <div
           onClick={() => setQue6(!que6)}
-          className=" items-center  shadow-lg rounded-2xl px-5 py-5 bg-black/3 group hover:shadow-2xl transition-all duration-300"
+          className="reveal8 items-center  shadow-lg rounded-2xl px-5 py-5 bg-black/3 group hover:shadow-2xl transition-all duration-300"
         >
           <div className="flex justify-between  ">
             <h1 className="font-medium text-md lg:text-xl group-hover:text-[#D4A]">
@@ -214,7 +226,7 @@ const AskedQuestion = () => {
 
         <div
           onClick={() => setQue7(!que7)}
-          className=" items-center  shadow-lg rounded-2xl px-5 py-5 bg-black/3 group hover:shadow-2xl transition-all duration-300"
+          className="reveal8 items-center  shadow-lg rounded-2xl px-5 py-5 bg-black/3 group hover:shadow-2xl transition-all duration-300"
         >
           <div className="flex justify-between  ">
             <h1 className="font-medium text-md lg:text-xl group-hover:text-[#D4A]">

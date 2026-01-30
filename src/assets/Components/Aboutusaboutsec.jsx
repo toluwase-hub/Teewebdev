@@ -1,6 +1,29 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import ScrollReveal from 'scrollreveal';
 
 const Aboutusaboutsec = () => {
+
+     useEffect(() => {
+          ScrollReveal().reveal(".reveal11", {
+            distance: "500px",
+            duration: 1200,
+            easing: "ease-out",
+            origin: "left",
+            interval: 600,
+            reset: false,
+          });
+        }, []);
+
+         useEffect(() => {
+      ScrollReveal().reveal(".reveal12", {
+        distance: "500px",
+        duration: 1200,
+        easing: "ease-out",
+        origin: "right",
+        interval: 600,
+        reset: false,
+      });
+    }, []);
   return (
     <div className='contains py-20'>
 
@@ -16,7 +39,7 @@ const Aboutusaboutsec = () => {
 
         <div className='grid grid-cols-1 lg:grid-cols-2  gap-8 items-center mt-15' >
 
-            <div >
+            <div className='reveal11'>
                 <p className=''>
                    <span>📌</span> <span>My name is <span className='font-bold text-[#D4A] underline'>Olaniyi Toluwase</span>, a passionate Frontend Developer with over one year of hands-on experience in the tech industry. I specialize in creating visually appealing, responsive, and user-friendly web interfaces that deliver seamless user experiences. My journey into web development has been driven by curiosity, creativity, and a strong desire to build products that make an impact.</span>
                 </p> <br />
@@ -33,7 +56,7 @@ const Aboutusaboutsec = () => {
                    📌 As a frontend developer, I am committed to continuous learning and growth in the ever-evolving tech space. I enjoy collaborating with others, exploring new technologies, and refining my craft with every project. My goal is to create meaningful digital experiences while growing into a highly skilled and impactful web developer.
                 </p>
             </div>
-            <div>
+            <div className='reveal12'>
                 <img src="/images/aboutside.jpg" className='object-cover w-full lg:w-150 h-100  rounded-3xl ' alt="" />
             </div>
 
