@@ -5,8 +5,8 @@ const AboutusTeam = () => {
 
    useEffect(() => {
         ScrollReveal().reveal(".reveal13", {
-          distance: "400px",
-          duration: 1000,
+          distance: "300px",
+          duration: 500,
           easing: "ease-out",
           origin: "bottom",
           interval: 400,

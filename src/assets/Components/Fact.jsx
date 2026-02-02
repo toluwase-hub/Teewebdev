@@ -7,7 +7,7 @@ const Fact = () => {
      useEffect(() => {
           ScrollReveal().reveal(".reveal3", {
             distance: "200px",
-            duration: 1200,
+            duration: 500,
             easing: "ease-out",
             origin: "bottom",
             interval: 600,

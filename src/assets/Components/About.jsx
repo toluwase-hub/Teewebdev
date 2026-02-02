@@ -18,8 +18,8 @@ const About = () => {
 
      useEffect(() => {
           ScrollReveal().reveal(".reveal1", {
-            distance: "500px",
-            duration: 1200,
+            distance: "100px",
+            duration: 500,
             easing: "ease-out",
             origin: "bottom",
             interval: 600,
@@ -29,8 +29,8 @@ const About = () => {
 
          useEffect(() => {
       ScrollReveal().reveal(".reveal2", {
-        distance: "500px",
-        duration: 1200,
+        distance: "200px",
+        duration: 500,
         easing: "ease-out",
         origin: "left",
         interval: 600,
@@ -39,7 +39,7 @@ const About = () => {
     }, []);
 
   return (
-    <div className="mt-6 contains lg:py-15 py-5">
+    <div className="mt-6 contains lg:py-15 py-5 overflow-x-hidden">
       <h1 className="text-center font-bold text-[#D4A] text-xl lg:text-2xl mb-2">
         About us
       </h1>

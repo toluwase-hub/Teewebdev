@@ -14,8 +14,8 @@ const AskedQuestion = () => {
 
    useEffect(() => {
         ScrollReveal().reveal(".reveal8", {
-          distance: "400px",
-          duration: 1200,
+          distance: "100px",
+          duration: 500,
           easing: "ease-out",
           origin: "bottom",
           interval: 400,

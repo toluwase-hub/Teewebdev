@@ -21,8 +21,8 @@ const Herosection = () => {
 
     useEffect(() => {
       ScrollReveal().reveal(".reveal", {
-        distance: "500px",
-        duration: 1200,
+        distance: "100px",
+        duration: 500,
         easing: "ease-out",
         origin: "left",
         interval: 600,

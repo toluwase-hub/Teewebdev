@@ -5,8 +5,8 @@ const Aboutusaboutsec = () => {
 
      useEffect(() => {
           ScrollReveal().reveal(".reveal11", {
-            distance: "500px",
-            duration: 1200,
+            distance: "100px",
+            duration: 500,
             easing: "ease-out",
             origin: "left",
             interval: 600,
@@ -16,8 +16,8 @@ const Aboutusaboutsec = () => {
 
          useEffect(() => {
       ScrollReveal().reveal(".reveal12", {
-        distance: "500px",
-        duration: 1200,
+        distance: "100px",
+        duration: 500,
         easing: "ease-out",
         origin: "right",
         interval: 600,
@@ -25,7 +25,7 @@ const Aboutusaboutsec = () => {
       });
     }, []);
   return (
-    <div className='contains py-20'>
+    <div className='contains py-20 overflow-x-hidden'>
 
 
       <h1 className='text-center font-bold text-[#D4A] text-xl lg:text-2xl mb-2'>

@@ -7,8 +7,8 @@ import ScrollReveal from "scrollreveal";
 const Chatus = () => {
   useEffect(() => {
     ScrollReveal().reveal(".reveal9", {
-      distance: "500px",
-      duration: 1200,
+      distance: "100px",
+      duration: 500,
       easing: "ease-out",
       origin: "left",
       interval: 500,
@@ -18,8 +18,8 @@ const Chatus = () => {
 
   useEffect(() => {
     ScrollReveal().reveal(".reveal10", {
-      distance: "500px",
-      duration: 1200,
+      distance: "100px",
+      duration: 500,
       easing: "ease-out",
       origin: "right",
       interval: 600,
@@ -32,7 +32,7 @@ const Chatus = () => {
     "Hello, Dev%20Tee%20i%20came%20across%20Your%20Portfolio%20and%20wanted%20reach%20out!";
   const whatsappurl = `https://wa.me/${PhoneNumber}?text=${message}`;
   return (
-    <div className="contains py-10">
+    <div className="contains py-10 overflow-x-hidden">
       <h1 className="text-center font-bold text-[#D4A] text-xl lg:text-2xl mb-2">
         Contact Us
       </h1>

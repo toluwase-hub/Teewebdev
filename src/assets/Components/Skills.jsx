@@ -7,8 +7,8 @@ const Skills = () => {
 
        useEffect(() => {
             ScrollReveal().reveal(".reveal6", {
-              distance: "500px",
-              duration: 1200,
+              distance: "300px",
+              duration: 500,
               easing: "ease-out",
               origin: "bottom",
               interval: 600,

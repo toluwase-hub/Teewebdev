@@ -13,7 +13,7 @@ const Service = () => {
    useEffect(() => {
         ScrollReveal().reveal(".reveal7", {
           distance: "100px",
-          duration: 1000,
+          duration: 500,
           easing: "ease-out",
           origin: "bottom",
           interval: 150,

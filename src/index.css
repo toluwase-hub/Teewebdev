@@ -3,5 +3,9 @@
     @apply w-[95%] mx-auto
 }
 .contains{
-    @apply w-[90%] mx-auto
+    /* @apply w-[90%] mx-auto */
+    width: 90%;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    margin: auto;
 }
