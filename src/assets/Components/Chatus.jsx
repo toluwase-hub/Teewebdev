@@ -32,7 +32,7 @@ const Chatus = () => {
     "Hello, Dev%20Tee%20i%20came%20across%20Your%20Portfolio%20and%20wanted%20reach%20out!";
   const whatsappurl = `https://wa.me/${PhoneNumber}?text=${message}`;
   return (
-    <div className="contains py-10 overflow-x-hidden">
+    <div className="contains py-10 ">
       <h1 className="text-center font-bold text-[#D4A] text-xl lg:text-2xl mb-2">
         Contact Us
       </h1>

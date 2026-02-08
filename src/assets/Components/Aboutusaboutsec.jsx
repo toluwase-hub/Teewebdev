@@ -25,7 +25,7 @@ const Aboutusaboutsec = () => {
       });
     }, []);
   return (
-    <div className='contains py-20 overflow-x-hidden'>
+    <div className='contains py-20 '>
 
 
       <h1 className='text-center font-bold text-[#D4A] text-xl lg:text-2xl mb-2'>

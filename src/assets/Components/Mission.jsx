@@ -27,7 +27,7 @@ const Mission = () => {
     }, []);
   return (
     <div className="bg-black/10 py-20 ">
-      <div className="contains overflow-x-hidden">
+      <div className="contains">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <div className="reveal4 shadow-xl bg-white px-6 py-8 rounded-3xl flex flex-col justify-center items-center gap-3 group hover:border border-blue-300 hover:shadow-2xl  transition-all duration-300">
             <div className="text-white transition-all duration-300 group-hover:scale-110 bg-blue-600 py-2 px-2 rounded-2xl ">

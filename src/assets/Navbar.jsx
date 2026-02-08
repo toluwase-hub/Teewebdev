@@ -4,13 +4,14 @@ import { MdOutlineCancelPresentation } from "react-icons/md";
 import { IoIosArrowDown } from "react-icons/io";
 import { IoIosArrowUp } from "react-icons/io";
 import ClickAwayListener from "@mui/material/ClickAwayListener";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { AiOutlineMenu } from "react-icons/ai";
 import { FaCode } from "react-icons/fa6";
 
+
 const Navbar = () => {
-  const Navlinks = ({ isActive }) =>
-    isActive ? "text-white/80" : "text-white";
+  // const Navlinks = ({ isActive }) =>
+  //   isActive ? "text-white/80" : "text-white";
 
   const [Show, setShow] = useState(false);
 
@@ -47,22 +48,30 @@ const Navbar = () => {
 
           {/* Desktop Menu */}
           <ul className="hidden lg:flex items-center gap-6">
+           <NavLink to="/"
+           
+           className={({isActive}) =>
+           isActive ? "text-[#D4A]" : "text-black/70"}>
             <li
-              className={`cursor-pointer hover:text-[#D4A]  text-black/70 ${Navlinks}`}
+              className={`cursor-pointer hover:text-[#D4A]  `}
             >
-              <Link to="/">Home</Link>
+              Home
             </li>
-
-            <li className=" hover:text-[#D4A]  cursor-pointer  text-black/70  flex items-center gap-2 relative  ">
-              <Link to="/About">
+            </NavLink>
+            <NavLink to="/About"
+            className={({isActive}) =>
+           isActive ? "text-[#D4A]" : "text-black/70"}>
+            <li className=" hover:text-[#D4A]  cursor-pointer  flex items-center gap-2 relative  ">
+              
                 {" "}
                 <span
-                  className={`flex gap-1 justify-center items-center ${Navlinks}`}
+                  className={`flex gap-1 justify-center items-center `}
                 >
                   <span>About Us</span>
                 </span>
-              </Link>
+              
             </li>
+            </NavLink>
 
             <li
               className="hover:text-[#D4A] cursor-pointer  text-black/70  flex items-center  relative gap-2 "
@@ -87,10 +96,14 @@ const Navbar = () => {
                 }`}
               >
                 <ul className="">
-                  <li className="hover:text-[#D4A]  border-b indent-3 py-2 text-black/70  border-black/20">
+                 <NavLink to="/Ourservice"
+                 className={({isActive}) =>
+           isActive ? "text-[#D4A]" : "text-black/70"}>
+                  <li className="hover:text-[#D4A]  border-b indent-3 py-2   border-black/20">
                     {" "}
-                    <Link to="/Ourservice">FrontEnd Design</Link>
+                    FrontEnd Design
                   </li>
+                  </NavLink>
 
                   <li className="hover:text-[#D4A]  py-2 indent-3 border-t  border-white/40 text-black/70 ">
                     BackEnd Design
@@ -98,15 +111,18 @@ const Navbar = () => {
                 </ul>
               </div>
             </li>
-
-            <li className="hover:text-[#D4A]  cursor-pointer  text-black/70  flex items-center gap-2">
-              <Link to="/Contact">
+            <NavLink to="/Contact"
+            className={({isActive}) =>
+           isActive ? "text-[#D4A]" : "text-black/70"}>
+            <li className="hover:text-[#D4A]  cursor-pointer    flex items-center gap-2">
+              
                 {" "}
                 <span className="flex  gap-1 justify-center items-center">
                   <span>Contact Us</span>
                 </span>
-              </Link>
+              
             </li>
+            </NavLink>
           </ul>
 
           <div></div>
@@ -148,25 +164,32 @@ const Navbar = () => {
       >
         <div className="bg-white w-[90%] rounded-2xl mx-auto mt-3">
           <ul className="flex flex-col gap-4 p-6  pl-7">
-            <li className=" cursor-pointer hover:text-[#D4A] " 
+            <NavLink to="/"
+            className={({isActive}) =>
+           isActive ? "text-[#D4A] bg-[#f1e3ed] " : "text-black/70"}><li className=" cursor-pointer hover:text-[#D4A] hover:bg-[#f1e3ed]  px-1 " 
             onClick={HandleCloseOnLink}
             >
-              <Link to="/">Home</Link>
+              Home
             </li>
+            </NavLink>
 
-            <li className="hover:text-[#D4A]  cursor-pointer flex items-center gap-2 relative  "
+          <NavLink to="/About"
+          className={({isActive}) =>
+           isActive ? "text-[#D4A] bg-[#f1e3ed] " : "text-black/70"}>
+            <li className="hover:text-[#D4A]  cursor-pointer flex items-center gap-2 relative hover:bg-[#f1e3ed] rounded px-1 "
              onClick={HandleCloseOnLink}
              >
-              <Link to="/About">
+              
                 {" "}
                 <span className="flex gap-1 justify-center items-center">
                   <span>About Us</span>
                 </span>
-              </Link>
+              
             </li>
+            </NavLink>
             <ClickAwayListener onClickAway={HandleService}>
               <li
-                className="hover:text-[#D4A]  cursor-pointer flex flex-col items-start  relative gap-2 "
+                className="hover:text-[#D4A] hover:bg-[#f1e3ed] rounded px-1  cursor-pointer flex flex-col items-start  relative gap-2 "
                 onClick={() => setServices(!Services)}
               >
                 <span className="flex gap-1  justify-center items-center  ">
@@ -187,12 +210,16 @@ const Navbar = () => {
                   }`}
                 >
                   <ul className="">
-                    <li className="hover:text-[#D4A]  border-b indent-3 py-2 text-black/70  border-black/20"
+                   <NavLink to="/Ourservice"
+                   className={({isActive}) =>
+           isActive ? "text-[#D4A] " : "text-black/70"}>
+                    <li className="hover:text-[#D4A]  border-b indent-3 py-2   border-black/20"
                      onClick={HandleCloseOnLink}
                      >
                       {" "}
-                      <Link to="/Ourservice">FrontEnd Design</Link>
+                      FrontEnd Design
                     </li>
+                    </NavLink>
 
                     <li className="hover:text-[#D4A]  py-2 indent-3 border-t  border-white/40 text-black/70 "
                      onClick={HandleCloseOnLink}
@@ -203,17 +230,20 @@ const Navbar = () => {
                 </div>
               </li>
             </ClickAwayListener>
-
-            <li className="hover:text-[#D4A]  cursor-pointer flex items-center gap-2"
+            <NavLink to="/Contact"
+            className={({isActive}) =>
+           isActive ? "text-[#D4A] bg-[#f1e3ed] " : "text-black/70"}>
+            <li className="hover:text-[#D4A] hover:bg-[#f1e3ed] rounded px-1  cursor-pointer flex items-center gap-2"
              onClick={HandleCloseOnLink}
              >
-              <Link to="/Contact">
+              
                 {" "}
                 <span className="flex  gap-1 justify-center items-center">
                   <span>Contact us</span>
                 </span>
-              </Link>
+              
             </li>
+            </NavLink>
           </ul>
 
           {/* <div className="indent-6">

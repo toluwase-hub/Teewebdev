@@ -68,7 +68,7 @@ const ContactusReachout = () => {
   const mapScr =
     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21102.40911188384!2d3.9293313745843874!3d7.8703152080085745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10375a36c601e8f9%3A0x26214050b9cc80b5!2sSabo%2C%20Oyo!5e0!3m2!1sen!2sng!4v1769533512849!5m2!1sen!2sng";
   return (
-    <div className="contains py-10 overflow-x-hidden ">
+    <div className="contains py-10  ">
       <h1 className="text-center font-bold text-[#D4A] text-xl lg:text-2xl mb-2 ">
         Reach Out
       </h1>
