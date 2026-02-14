@@ -151,7 +151,7 @@ const Navbar = () => {
             </NavLink>
           </ul>
 
-          <div className="font-light text-sm">
+          <div className="font-light text-xs text-[#D4A]">
             {Message} 
             
           </div>
