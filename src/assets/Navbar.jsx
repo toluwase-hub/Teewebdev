@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { GoMultiSelect } from "react-icons/go";
 import { MdOutlineCancelPresentation } from "react-icons/md";
 import { IoIosArrowDown } from "react-icons/io";
@@ -7,7 +7,6 @@ import ClickAwayListener from "@mui/material/ClickAwayListener";
 import { Link, NavLink } from "react-router-dom";
 import { AiOutlineMenu } from "react-icons/ai";
 import { FaCode } from "react-icons/fa6";
-
 
 const Navbar = () => {
   // const Navlinks = ({ isActive }) =>
@@ -28,6 +27,33 @@ const Navbar = () => {
   // function to close the nav bar anytime any of the link is clicked
   const HandleCloseOnLink = ()=> {
     setShow(false)
+  }
+
+  // generating local time
+  const [time, setTime] = useState('');
+
+  useEffect(()=>{
+      const timer = setInterval(() => {
+        const nigeriaTime = new Date().toLocaleString('en-NG',{
+          timeZone: 'Africa/Lagos',
+          hour: 'numeric',
+          minute: 'numeric',
+          second: 'numeric',
+          hour12: false,
+        });
+        setTime(nigeriaTime);
+      }, 1000);
+      return () => clearInterval(timer);
+  },[]);
+
+  let Message;
+
+  if (time < 12){
+    Message = "Good Morning ☁️"
+  } else if (time == 12 && time < 16){
+    Message = "Good Afternoon 🌤️ "
+  } else {
+    Message = "Good Evening 🌙"
   }
 
   return (
@@ -125,7 +151,10 @@ const Navbar = () => {
             </NavLink>
           </ul>
 
-          <div></div>
+          <div className="font-light text-sm">
+            {Message} 
+            
+          </div>
 
           {/* Desktop Button */}
 
