@@ -25,35 +25,37 @@ const Navbar = () => {
   };
 
   // function to close the nav bar anytime any of the link is clicked
-  const HandleCloseOnLink = ()=> {
-    setShow(false)
-  }
+  const HandleCloseOnLink = () => {
+    setShow(false);
+  };
 
   // generating local time
-  const [time, setTime] = useState('');
+  const [time, setTime] = useState("");
 
-  useEffect(()=>{
-      const timer = setInterval(() => {
-        const nigeriaTime = new Date().toLocaleString('en-NG',{
-          timeZone: 'Africa/Lagos',
-          hour: 'numeric',
-          minute: 'numeric',
-          second: 'numeric',
-          hour12: false,
-        });
-        setTime(nigeriaTime);
-      }, 1000);
-      return () => clearInterval(timer);
-  },[]);
+  useEffect(() => {
+    const timer = setInterval(() => {
+      const nigeriaTime = new Date().toLocaleString("en-NG", {
+        timeZone: "Africa/Lagos",
+        hour: "numeric",
+        minute: "numeric",
+        second: "numeric",
+        hour12: false,
+      });
+      setTime(nigeriaTime);
+    }, 1000);
+    return () => clearInterval(timer);
+  }, []);
+
+  const times = parseFloat(time);
 
   let Message;
 
-  if (time < 12){
-    Message = "Good Morning ☁️"
-  } else if (time == 12 && time < 16){
-    Message = "Good Afternoon 🌤️ "
+  if (times >= 0 && times < 12) {
+    Message = "Good Morning ☁️";
+  } else if (times >= 12 && times < 16) {
+    Message = "Good Afternoon 🌤️ ";
   } else {
-    Message = "Good Evening 🌙"
+    Message = "Good Evening 🌙";
   }
 
   return (
@@ -74,29 +76,26 @@ const Navbar = () => {
 
           {/* Desktop Menu */}
           <ul className="hidden lg:flex items-center gap-6">
-           <NavLink to="/"
-           
-           className={({isActive}) =>
-           isActive ? "text-[#D4A]" : "text-black/70"}>
-            <li
-              className={`cursor-pointer hover:text-[#D4A]  `}
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                isActive ? "text-[#D4A]" : "text-black/70"
+              }
             >
-              Home
-            </li>
+              <li className={`cursor-pointer hover:text-[#D4A]  `}>Home</li>
             </NavLink>
-            <NavLink to="/About"
-            className={({isActive}) =>
-           isActive ? "text-[#D4A]" : "text-black/70"}>
-            <li className=" hover:text-[#D4A]  cursor-pointer  flex items-center gap-2 relative  ">
-              
+            <NavLink
+              to="/About"
+              className={({ isActive }) =>
+                isActive ? "text-[#D4A]" : "text-black/70"
+              }
+            >
+              <li className=" hover:text-[#D4A]  cursor-pointer  flex items-center gap-2 relative  ">
                 {" "}
-                <span
-                  className={`flex gap-1 justify-center items-center `}
-                >
+                <span className={`flex gap-1 justify-center items-center `}>
                   <span>About Us</span>
                 </span>
-              
-            </li>
+              </li>
             </NavLink>
 
             <li
@@ -122,13 +121,16 @@ const Navbar = () => {
                 }`}
               >
                 <ul className="">
-                 <NavLink to="/Ourservice"
-                 className={({isActive}) =>
-           isActive ? "text-[#D4A]" : "text-black/70"}>
-                  <li className="hover:text-[#D4A]  border-b indent-3 py-2   border-black/20">
-                    {" "}
-                    FrontEnd Design
-                  </li>
+                  <NavLink
+                    to="/Ourservice"
+                    className={({ isActive }) =>
+                      isActive ? "text-[#D4A]" : "text-black/70"
+                    }
+                  >
+                    <li className="hover:text-[#D4A]  border-b indent-3 py-2   border-black/20">
+                      {" "}
+                      FrontEnd Design
+                    </li>
                   </NavLink>
 
                   <li className="hover:text-[#D4A]  py-2 indent-3 border-t  border-white/40 text-black/70 ">
@@ -137,32 +139,32 @@ const Navbar = () => {
                 </ul>
               </div>
             </li>
-            <NavLink to="/Contact"
-            className={({isActive}) =>
-           isActive ? "text-[#D4A]" : "text-black/70"}>
-            <li className="hover:text-[#D4A]  cursor-pointer    flex items-center gap-2">
-              
+            <NavLink
+              to="/Contact"
+              className={({ isActive }) =>
+                isActive ? "text-[#D4A]" : "text-black/70"
+              }
+            >
+              <li className="hover:text-[#D4A]  cursor-pointer    flex items-center gap-2">
                 {" "}
                 <span className="flex  gap-1 justify-center items-center">
                   <span>Contact Us</span>
                 </span>
-              
-            </li>
+              </li>
             </NavLink>
           </ul>
 
-          <div className="font-light text-xs text-[#D4A]">
-            {Message} 
-            
-          </div>
+          <div className="font-light text-xs text-[#D4A]">{Message}</div>
 
           {/* Desktop Button */}
 
           <div className="flex gap-5">
             <div className="">
-             <Link to="/Ourservice"> <span className="text-[#D4a] hover:text-[#e2149d]">
-                <FaCode size={25} className="animate-spin " />
-              </span>
+              <Link to="/Ourservice">
+                {" "}
+                <span className="text-[#D4a] hover:text-[#e2149d]">
+                  <FaCode size={25} className="animate-spin " />
+                </span>
               </Link>
             </div>
 
@@ -193,28 +195,35 @@ const Navbar = () => {
       >
         <div className="bg-white w-[90%] rounded-2xl mx-auto mt-3">
           <ul className="flex flex-col gap-4 p-6  pl-7">
-            <NavLink to="/"
-            className={({isActive}) =>
-           isActive ? "text-[#D4A] bg-[#f1e3ed] " : "text-black/70"}><li className=" cursor-pointer hover:text-[#D4A] hover:bg-[#f1e3ed]  px-1 " 
-            onClick={HandleCloseOnLink}
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                isActive ? "text-[#D4A] bg-[#f1e3ed] " : "text-black/70"
+              }
             >
-              Home
-            </li>
+              <li
+                className=" cursor-pointer hover:text-[#D4A] hover:bg-[#f1e3ed]  px-1 "
+                onClick={HandleCloseOnLink}
+              >
+                Home
+              </li>
             </NavLink>
 
-          <NavLink to="/About"
-          className={({isActive}) =>
-           isActive ? "text-[#D4A] bg-[#f1e3ed] " : "text-black/70"}>
-            <li className="hover:text-[#D4A]  cursor-pointer flex items-center gap-2 relative hover:bg-[#f1e3ed] rounded px-1 "
-             onClick={HandleCloseOnLink}
-             >
-              
+            <NavLink
+              to="/About"
+              className={({ isActive }) =>
+                isActive ? "text-[#D4A] bg-[#f1e3ed] " : "text-black/70"
+              }
+            >
+              <li
+                className="hover:text-[#D4A]  cursor-pointer flex items-center gap-2 relative hover:bg-[#f1e3ed] rounded px-1 "
+                onClick={HandleCloseOnLink}
+              >
                 {" "}
                 <span className="flex gap-1 justify-center items-center">
                   <span>About Us</span>
                 </span>
-              
-            </li>
+              </li>
             </NavLink>
             <ClickAwayListener onClickAway={HandleService}>
               <li
@@ -239,39 +248,46 @@ const Navbar = () => {
                   }`}
                 >
                   <ul className="">
-                   <NavLink to="/Ourservice"
-                   className={({isActive}) =>
-           isActive ? "text-[#D4A] " : "text-black/70"}>
-                    <li className="hover:text-[#D4A]  border-b indent-3 py-2   border-black/20"
-                     onClick={HandleCloseOnLink}
-                     >
-                      {" "}
-                      FrontEnd Design
-                    </li>
+                    <NavLink
+                      to="/Ourservice"
+                      className={({ isActive }) =>
+                        isActive ? "text-[#D4A] " : "text-black/70"
+                      }
+                    >
+                      <li
+                        className="hover:text-[#D4A]  border-b indent-3 py-2   border-black/20"
+                        onClick={HandleCloseOnLink}
+                      >
+                        {" "}
+                        FrontEnd Design
+                      </li>
                     </NavLink>
 
-                    <li className="hover:text-[#D4A]  py-2 indent-3 border-t  border-white/40 text-black/70 "
-                     onClick={HandleCloseOnLink}
-                     >
+                    <li
+                      className="hover:text-[#D4A]  py-2 indent-3 border-t  border-white/40 text-black/70 "
+                      onClick={HandleCloseOnLink}
+                    >
                       BackEnd Design
                     </li>
                   </ul>
                 </div>
               </li>
             </ClickAwayListener>
-            <NavLink to="/Contact"
-            className={({isActive}) =>
-           isActive ? "text-[#D4A] bg-[#f1e3ed] " : "text-black/70"}>
-            <li className="hover:text-[#D4A] hover:bg-[#f1e3ed] rounded px-1  cursor-pointer flex items-center gap-2"
-             onClick={HandleCloseOnLink}
-             >
-              
+            <NavLink
+              to="/Contact"
+              className={({ isActive }) =>
+                isActive ? "text-[#D4A] bg-[#f1e3ed] " : "text-black/70"
+              }
+            >
+              <li
+                className="hover:text-[#D4A] hover:bg-[#f1e3ed] rounded px-1  cursor-pointer flex items-center gap-2"
+                onClick={HandleCloseOnLink}
+              >
                 {" "}
                 <span className="flex  gap-1 justify-center items-center">
                   <span>Contact us</span>
                 </span>
-              
-            </li>
+              </li>
             </NavLink>
           </ul>
 
