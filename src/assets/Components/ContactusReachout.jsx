@@ -1,10 +1,13 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import { FaHome } from "react-icons/fa";
 import { FaRocketchat } from "react-icons/fa";
 import { MdWhatsapp } from "react-icons/md";
 import { MdOutlineMail } from "react-icons/md";
 import { FiPhoneCall } from "react-icons/fi";
 import ScrollReveal from "scrollreveal";
+import { QRCodeSVG } from "qrcode.react";
+import { useReactToPrint } from "react-to-print";
+
 
 const ContactusReachout = () => {
 
@@ -67,6 +70,15 @@ const ContactusReachout = () => {
 
   const mapScr =
     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21102.40911188384!2d3.9293313745843874!3d7.8703152080085745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10375a36c601e8f9%3A0x26214050b9cc80b5!2sSabo%2C%20Oyo!5e0!3m2!1sen!2sng!4v1769533512849!5m2!1sen!2sng";
+
+    const webSiteQRcode = 'https://teewebdev.vercel.app/';
+
+     const componentRef = useRef();
+
+ const handlePrint = useReactToPrint({
+  contentRef: componentRef,
+  documentTitle: "QRcode",
+});
   return (
     <div className="contains py-10  ">
       <h1 className="text-center font-bold text-[#D4A] text-xl lg:text-2xl mb-2 ">
@@ -120,7 +132,7 @@ const ContactusReachout = () => {
               <div className="reveal15">
                 <h1 className="font-bold">Email</h1>
                 <p className="hover:text-[#D4A] transition-all duration-200 ">
-                  Olaniyitoluwase@gmail.com
+                  Olaniyitoluwase799@gmail.com
                 </p>
               </div>
             </div>
@@ -135,6 +147,15 @@ const ContactusReachout = () => {
                   09043933210
                 </p>
               </div>
+            </div>
+
+            <div className="">
+              <h1 className="font-bold pb-2">Scan for Easy Accessibility</h1>
+              <div ref={componentRef} className="print-area">
+                  <QRCodeSVG value={webSiteQRcode} side={256} />
+              </div>
+              <button onClick={handlePrint} className=" hover:bg-green-300 bg-green-200  border border-green-600  rounded-md  transition-all duration-200 px-2 my-2 font-bold">Save</button>
+              
             </div>
           </div>
 
