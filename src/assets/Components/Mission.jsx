@@ -6,7 +6,7 @@ import ScrollReveal from "scrollreveal";
 const Mission = () => {
   useEffect(() => {
     ScrollReveal().reveal(".reveal4", {
-      distance: "100px",
+      distance: "50px",
       duration: 500,
       easing: "ease-out",
       origin: "left",
@@ -17,7 +17,7 @@ const Mission = () => {
 
    useEffect(() => {
       ScrollReveal().reveal(".reveal5", {
-        distance: "100px",
+        distance: "50px",
         duration: 500,
         easing: "ease-out",
         origin: "right",

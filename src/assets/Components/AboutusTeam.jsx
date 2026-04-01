@@ -27,7 +27,7 @@ const AboutusTeam = () => {
     {
       image: (
         <img
-          src="/images/aboutside.jpg"
+          src="/images/myaboutimage.jpeg"
           className="w-30 h-30 rounded-full object-cover"
           alt="team1"
         />

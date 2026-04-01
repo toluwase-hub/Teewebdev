@@ -23,7 +23,7 @@ const Contactusherosection = () => {
 
      useEffect(() => {
           ScrollReveal().reveal(".reveal", {
-            distance: "100px",
+            distance: "50px",
             duration: 500,
             easing: "ease-out",
             origin: "left",

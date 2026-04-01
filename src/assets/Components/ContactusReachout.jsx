@@ -13,7 +13,7 @@ const ContactusReachout = () => {
 
    useEffect(() => {
         ScrollReveal().reveal(".reveal14", {
-          distance: "400px",
+          distance: "100px",
           duration: 500,
           easing: "ease-out",
           origin: "bottom",
@@ -24,7 +24,7 @@ const ContactusReachout = () => {
 
        useEffect(() => {
       ScrollReveal().reveal(".reveal15", {
-        distance: "400px",
+        distance: "100px",
         duration: 500,
         easing: "ease-out",
         origin: "bottom",
@@ -35,7 +35,7 @@ const ContactusReachout = () => {
 
      useEffect(() => {
       ScrollReveal().reveal(".reveal16", {
-        distance: "100px",
+        distance: "50px",
         duration: 500,
         easing: "ease-out",
         origin: "left",
@@ -46,10 +46,21 @@ const ContactusReachout = () => {
 
      useEffect(() => {
       ScrollReveal().reveal(".reveal17", {
-        distance: "100px",
+        distance: "50px",
         duration: 500,
         easing: "ease-out",
         origin: "right",
+        interval: 600,
+        reset: false,
+      });
+    }, []);
+
+    useEffect(() => {
+      ScrollReveal().reveal(".reveal18", {
+        distance: "50px",
+        duration: 500,
+        easing: "ease-out",
+        origin: "left",
         interval: 600,
         reset: false,
       });
@@ -72,6 +83,8 @@ const ContactusReachout = () => {
     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21102.40911188384!2d3.9293313745843874!3d7.8703152080085745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10375a36c601e8f9%3A0x26214050b9cc80b5!2sSabo%2C%20Oyo!5e0!3m2!1sen!2sng!4v1769533512849!5m2!1sen!2sng";
 
     const webSiteQRcode = 'https://teewebdev.vercel.app/';
+
+    const WhatsappQRcode = 'https://wa.me/2349043933210';
 
      const componentRef = useRef();
 
@@ -149,14 +162,29 @@ const ContactusReachout = () => {
               </div>
             </div>
 
+              <div className="reveal18 flex flex-col lg:flex-row md:flex-row gap-2">
+
+             
             <div className="">
-              <h1 className="font-bold pb-2">Scan for Easy Accessibility</h1>
+              <h1 className="font-small pb-2">Scan for Easy Accessibility on other devices</h1>
               <div ref={componentRef} className="print-area">
                   <QRCodeSVG value={webSiteQRcode} side={256} />
               </div>
               <button onClick={handlePrint} className=" hover:bg-green-300 bg-green-200  border border-green-600  rounded-md  transition-all duration-200 px-2 my-2 font-bold">Save</button>
               
             </div>
+
+
+            <div className="">
+              <h1 className="font-small pb-2">Scan To Chat us on Whatsapp</h1>
+              <div ref={componentRef} className="print-area">
+                  <QRCodeSVG value={WhatsappQRcode} side={256} />
+              </div>
+
+              
+            </div>
+
+ </div>
           </div>
 
           <div className="reveal16 flex gap-4  group hover:bg-[#f5e0ee] border border-[#D4A]   transition-all duration-300 py-10 px-5 rounded-3xl items-center">

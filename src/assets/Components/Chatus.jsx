@@ -7,7 +7,7 @@ import ScrollReveal from "scrollreveal";
 const Chatus = () => {
   useEffect(() => {
     ScrollReveal().reveal(".reveal9", {
-      distance: "100px",
+      distance: "50px",
       duration: 500,
       easing: "ease-out",
       origin: "left",
@@ -18,7 +18,7 @@ const Chatus = () => {
 
   useEffect(() => {
     ScrollReveal().reveal(".reveal10", {
-      distance: "100px",
+      distance: "50px",
       duration: 500,
       easing: "ease-out",
       origin: "right",

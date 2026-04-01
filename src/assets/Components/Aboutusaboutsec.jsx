@@ -5,7 +5,7 @@ const Aboutusaboutsec = () => {
 
      useEffect(() => {
           ScrollReveal().reveal(".reveal11", {
-            distance: "100px",
+            distance: "50px",
             duration: 500,
             easing: "ease-out",
             origin: "left",
@@ -16,7 +16,7 @@ const Aboutusaboutsec = () => {
 
          useEffect(() => {
       ScrollReveal().reveal(".reveal12", {
-        distance: "100px",
+        distance: "50px",
         duration: 500,
         easing: "ease-out",
         origin: "right",
@@ -57,7 +57,7 @@ const Aboutusaboutsec = () => {
                 </p>
             </div>
             <div className='reveal12'>
-                <img src="/images/aboutside.jpg" className='object-cover w-full lg:w-150 h-100  rounded-3xl ' alt="" />
+                <img src="/images/myaboutimage.jpeg" className='object-cover w-full lg:w-150 h-100  rounded-3xl ' alt="" />
             </div>
 
 

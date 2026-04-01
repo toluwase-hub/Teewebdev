@@ -29,7 +29,7 @@ const About = () => {
 
          useEffect(() => {
       ScrollReveal().reveal(".reveal2", {
-        distance: "200px",
+        distance: "50px",
         duration: 500,
         easing: "ease-out",
         origin: "left",
@@ -53,8 +53,8 @@ const About = () => {
       <div className="flex flex-col lg:flex-row gap-15 mt-15">
         <div className="reveal2">
           <img
-            src="/images/mainheroback.jpg"
-            className="object-cover hover:scale-102 transition-all duration-150 lg:w-200 w-full h-80  "
+            src="/images/myaboutimage.jpeg"
+            className="object-cover hover:scale-102 transition-all duration-150 lg:w-200 w-full h-80   "
             alt=""
           />
         </div>
