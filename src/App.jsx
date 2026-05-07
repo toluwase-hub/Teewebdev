@@ -27,7 +27,7 @@ function App() {
   };
 
   const comingSoon = () => {
-    alert('Coming Soon')
+    alert('Coming Soon !!!')
   }
   
   return (

@@ -265,7 +265,7 @@ const Navbar = ({comingSoon}) => {
 
                     <li
                       className="hover:text-[#D4A]  py-2 indent-3 border-t  border-white/40 text-black/70 "
-                      onClick={HandleCloseOnLink}
+                      onClick={comingSoon}
                     >
                       BackEnd Design
                     </li>
