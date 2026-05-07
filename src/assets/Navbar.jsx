@@ -8,7 +8,7 @@ import { Link, NavLink } from "react-router-dom";
 import { AiOutlineMenu } from "react-icons/ai";
 import { FaCode } from "react-icons/fa6";
 
-const Navbar = () => {
+const Navbar = ({comingSoon}) => {
   // const Navlinks = ({ isActive }) =>
   //   isActive ? "text-white/80" : "text-white";
 
@@ -133,7 +133,7 @@ const Navbar = () => {
                     </li>
                   </NavLink>
 
-                  <li className="hover:text-[#D4A]  py-2 indent-3 border-t  border-white/40 text-black/70 ">
+                  <li onClick={comingSoon} className="hover:text-[#D4A]  py-2 indent-3 border-t  border-white/40 text-black/70 ">
                     BackEnd Design
                   </li>
                 </ul>

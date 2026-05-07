@@ -6,6 +6,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 import { FaTiktok } from "react-icons/fa";
 
+
 const Footer = () => {
 
      const PhoneNumber = "+2349043933210";
@@ -23,11 +24,11 @@ const Footer = () => {
             <h1 className='text-2xl font-medium'>TEE WEBSITE CODER</h1>
 
             <div className='flex gap-2 py-3 text-white/80'>
-                <div className='hover:text-[#D4A]'>< FaTwitter size={15}/></div>
-                <div className='hover:text-[#D4A]'>< CiFacebook size={15}/></div>
-                <div className='hover:text-[#D4A]'> < FaLinkedin size={15}/></div>
-                <div className='hover:text-[#D4A]'>< FaInstagram size={15}/></div>
-                <div className='hover:text-[#D4A]'>< FaTiktok size={15}/></div>
+                <div className='hover:text-[#D4A] hover:scale-150 transition-all duration-200'>< FaTwitter size={15}/></div>
+                <div className='hover:text-[#D4A] hover:scale-150 transition-all duration-200'>< CiFacebook size={15}/></div>
+                <div className='hover:text-[#D4A] hover:scale-150 transition-all duration-200'> < FaLinkedin size={15}/></div>
+                <div className='hover:text-[#D4A] hover:scale-150 transition-all duration-200'>< FaInstagram size={15}/></div>
+                <div className='hover:text-[#D4A] hover:scale-150 transition-all duration-200'>< FaTiktok size={15}/></div>
             </div>
         </div>
 
@@ -35,6 +36,7 @@ const Footer = () => {
             <h1>
                 Frontend Web Developer Crafting clean and responsive web experiences.
             </h1>
+            
         </div>
     </div>
 
@@ -47,8 +49,8 @@ const Footer = () => {
 
         <div>
             <ul className='flex flex-col gap-1'>
-               <Link to="/"><li className='hover:underline hover:text-[#f709cf] '>Home</li></Link>
-               <Link to="/About"><li className='hover:underline hover:text-[#f709cf] '>About</li></Link>  
+               <Link to="/" ><li className='hover:underline hover:text-[#f709cf] '>Home</li></Link>
+               <Link to="/About"><li  className='hover:underline hover:text-[#f709cf] '>About</li></Link>  
                <Link to="/Ourservice"><li className='hover:underline hover:text-[#f709cf] '>Services</li></Link> 
                 <Link to="/Contact"><li className='hover:underline hover:text-[#f709cf] '>Contact</li></Link>
 

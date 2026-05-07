@@ -6,12 +6,12 @@ import { MdCleaningServices } from "react-icons/md";
 import { FiPhoneCall } from "react-icons/fi";
 import ScrollReveal from 'scrollreveal';
 
-const Ourserviceherosection = () => {
+const Ourserviceherosection = ({comingSoon}) => {
 
    useEffect(() => {
         ScrollReveal().reveal(".reveal", {
-          distance: "500px",
-          duration: 1200,
+          distance: "100px",
+          duration: 500,
           easing: "ease-out",
           origin: "left",
           interval: 600,
@@ -27,9 +27,9 @@ const Ourserviceherosection = () => {
      <div className="absolute inset-0 bg-black/80"></div>
       <div className="contains absolute inset-0   items-center   flex justify-between    gap-20 text-white leading-relaxed">
             <div className='mt-8 reveal'>
-            <h1 className='text-7xl font-medium lg:font-bold' > TEE  <span className='italic text-[#D4A] '>WEBSITE <br /></span> CODER </h1>
+            <h1 className='text-7xl font-medium lg:font-bold' > TEE  <span className='italic text-[#D4A] '>WEBSITE <br /></span> PRICING </h1>
             <h5 className='text-xl lg:text-2xl py-3'>
-                We Are The Best <span>let Handle Your </span> <span className='font-bold'>Website</span> Design and, development For You.
+                Affordable <span>Website  </span> <span className='font-bold'>Development</span> Packages.
             </h5>
 
                <div className='flex  gap-5 mt-4 lg:mt-8'>

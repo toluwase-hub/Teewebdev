@@ -15,30 +15,45 @@ import Loading from './assets/Components/Loading'
 
 
 
+
+
 function App() {
+
+  const Tops = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
+  const comingSoon = () => {
+    alert('Coming Soon')
+  }
   
   return (
    <>
-    <BrowserRouter>
+  
+    
     
          
-        <Navbar />
+        <Navbar comingSoon={comingSoon} />
        
         <Routes>
-          <Route path='/' exact Component={Home} />
-          <Route path='/About' Component={About} />
-          <Route path='/Ourservice' Component={Ourservice} />
-          <Route path='/Contact' Component={Contact} />
+          <Route path='/' exact element={<Home />} />
+          <Route path='/About' element={<About />} />
+          <Route path='/Ourservice' element={<Ourservice comingSoon={comingSoon} />}  />
+          <Route path='/Contact' element={<Contact />} />
     
         </Routes>
+        
          
-          <Footer />
+          <Footer Tops={Tops} />
           {/* <Loading /> */}
 
           <Backtotop />
           <Whatsappicon />
 
-        </BrowserRouter>
+       
 
 
    </>

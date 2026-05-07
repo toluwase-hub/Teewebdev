@@ -84,7 +84,7 @@ const About = () => {
               <div className="flex items-center">
                 <h1> 📌 </h1>
                 <p className="ps-2">
-                  <span className="font-bold">Website</span>: www.example.com
+                  <span className="font-bold">Website</span>: <a className="underline" href="https://receiptgenerator.vercel.app/" target="_blank" rel='noreferrer'>receiptgenerator.vercel.app</a> 
                 </p>
               </div>
 
