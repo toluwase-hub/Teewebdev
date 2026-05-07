@@ -23,8 +23,8 @@ const Frontendservice = () => {
   const price1NGN = 300000;
   const price2NGN = 400000;
 
-  const price1USD = (price1NGN / usd_to_naira).toFixed(2);
-  const price2USD = (price2NGN / usd_to_naira).toFixed(2);
+  const price1USD = (price1NGN / usd_to_naira).toFixed();
+  const price2USD = (price2NGN / usd_to_naira).toFixed();
 
   return (
     <div className="contains py-15 ">
@@ -65,7 +65,9 @@ const Frontendservice = () => {
                 </span>
               </div>
               <div className="font-bold text-4xl">
-                {currency === "NGN" ? "#" : "$"}{" "}
+                <span className="text-2xl">
+                {currency === "NGN" ? "#" : "$"}
+                </span>{" "}
                 {currency === "NGN" ? price1NGN : price1USD}
               </div>
             </div>
@@ -107,7 +109,10 @@ const Frontendservice = () => {
                 </span>
               </div>
               <div className="font-bold text-4xl">
-                {currency === "NGN" ? "#" : "$"}{" "}
+                <span className="text-2xl">
+                {currency === "NGN" ? "#" : "$"}
+                </span>
+                {" "}
                 {currency === "NGN" ? price2NGN : price2USD}
               </div>
             </div>
@@ -152,7 +157,9 @@ const Frontendservice = () => {
             <div className="bg-black text-white py-4 px-4 rounded-t-2xl flex flex-col gap-3">
               <div className="text-2xl font-bold">CUSTOM</div>
               <div className="font-bold text-4xl">
-                {currency === "NGN" ? "#" : "$"} XXX,XXX
+                <span className="text-2xl">
+                {currency === "NGN" ? "#" : "$"}
+                </span> XXX,XXX
               </div>
             </div>
 
