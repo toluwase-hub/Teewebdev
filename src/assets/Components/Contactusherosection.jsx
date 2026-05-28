@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import { MdCleaningServices } from "react-icons/md";
 import { FiPhoneCall } from "react-icons/fi";
 import ScrollReveal from 'scrollreveal';
+import TextType from "./TextType";
 
 const Contactusherosection = () => {
 
@@ -44,7 +45,25 @@ const Contactusherosection = () => {
             <div className='mt-8 reveal'>
             <h1 className='text-6xl font-medium lg:text-7xl lg:font-bold' >CONTACT TEE  <span className='italic text-[#D4A] '>WEBSITE <br /></span> CODER </h1>
             <h5 className='text-xl lg:text-2xl py-3'>
-                Reach Out For Inquiries Or Support.
+              <TextType
+                text={[
+                  "Reach Out For Inquiries Or Support.",
+                ]}
+                typingSpeed={155}
+                pauseDuration={1500}
+                showCursor
+                cursorCharacter="_"
+                texts={[
+                  "Welcome to React Bits! Good to see you!",
+                  "Build some amazing experiences!",
+                ]}
+                deletingSpeed={85}
+                variableSpeedEnabled
+                variableSpeedMin={140}
+                variableSpeedMax={225}
+                cursorBlinkDuration={0.5}
+              />
+                {/* Reach Out For Inquiries Or Support. */}
             </h5>
 
 <div className='flex  gap-5 mt-4 lg:mt-8'>

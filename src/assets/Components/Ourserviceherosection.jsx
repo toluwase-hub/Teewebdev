@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import { MdCleaningServices } from "react-icons/md";
 import { FiPhoneCall } from "react-icons/fi";
 import ScrollReveal from 'scrollreveal';
+import TextType from "./TextType";
 
 const Ourserviceherosection = ({comingSoon}) => {
 
@@ -29,7 +30,25 @@ const Ourserviceherosection = ({comingSoon}) => {
             <div className='mt-8 reveal'>
             <h1 className='text-7xl font-medium lg:font-bold' > TEE  <span className='italic text-[#D4A] '>WEBSITE <br /></span> PRICING </h1>
             <h5 className='text-xl lg:text-2xl py-3'>
-                Affordable <span>Website  </span> <span className='font-bold'>Development</span> Packages.
+              <TextType
+                text={[
+                  "Affordable Website Development Packages.",
+                ]}
+                typingSpeed={155}
+                pauseDuration={1500}
+                showCursor
+                cursorCharacter="_"
+                texts={[
+                  "Welcome to React Bits! Good to see you!",
+                  "Build some amazing experiences!",
+                ]}
+                deletingSpeed={85}
+                variableSpeedEnabled
+                variableSpeedMin={140}
+                variableSpeedMax={225}
+                cursorBlinkDuration={0.5}
+              />
+                {/* Affordable <span>Website  </span> <span className='font-bold'>Development</span> Packages. */}
             </h5>
 
                <div className='flex  gap-5 mt-4 lg:mt-8'>
