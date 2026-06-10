@@ -21,7 +21,7 @@ const Footer = () => {
 
     <div className='lg:col-span-1 md:col-span-1 col-span-2 flex flex-col gap-4'>
         <div>
-            <h1 className='text-2xl font-medium'>TEE WEBSITE CODER</h1>
+            <h1 className='text-2xl font-medium'>TEE WEBSITE DEV</h1>
 
             <div className='flex gap-2 py-3 text-white/80'>
                 <div className='hover:text-[#D4A] hover:scale-150 transition-all duration-200'>< FaTwitter size={15}/></div>
@@ -117,7 +117,7 @@ const Footer = () => {
     </div>
 
     <h1 className='text-center font-light text-sm relative pt-5'>
-        © 2026 <span>Tee Website Coder</span>. All rights reserved.
+        © 2026 <span>Tee Website Dev</span>. All rights reserved.
     </h1>
 
     </div>

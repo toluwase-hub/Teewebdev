@@ -31,7 +31,7 @@ const Service = () => {
           </h1>
           <div className="flex flex-col  items-center gap-6">
             <h1 className="text-2xl lg:text-4xl font-bold text-white text-center">
-              Tee Website Coder Services
+              Tee Website Dev Services
             </h1>
             <div className="border-t-3  border-[#D4A] w-20 "></div>
           </div>

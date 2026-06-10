@@ -35,7 +35,7 @@ const Aboutherosection = () => {
               <span className="italic text-[#D4A] ">
                 WEBSITE <br />
               </span>{" "}
-              CODER{" "}
+              DEV{" "}
             </h1>
             <h5 className="text-xl lg:text-2xl py-3">
               <TextType

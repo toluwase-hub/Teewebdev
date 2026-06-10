@@ -45,7 +45,7 @@ const About = () => {
       </h1>
       <div className="flex flex-col  items-center gap-6">
         <h1 className="text-2xl lg:text-4xl font-bold text-black/80 text-center">
-          About Tee Website Coder
+          About Tee Website Dev
         </h1>
         <div className="border-t-3  border-[#D4A] w-20 "></div>
       </div>
@@ -84,7 +84,7 @@ const About = () => {
               <div className="flex items-center">
                 <h1> 📌 </h1>
                 <p className="ps-2">
-                  <span className="font-bold">Website</span>: <a className="underline" href="https://receiptgenerator.vercel.app/" target="_blank" rel='noreferrer'>receiptgenerator.vercel.app</a> 
+                  <span className="font-bold">Website</span>: <a className="underline" href="https://precis-luxe.vercel.app/" target="_blank" rel='noreferrer'>precis-luxe.vercel.app</a> 
                 </p>
               </div>
 

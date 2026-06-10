@@ -71,7 +71,7 @@ const Navbar = ({comingSoon}) => {
               ee
             </span>
             <span className="font-bold animate-pulse ">Web</span>
-            <span>Coder</span>
+            <span>Dev</span>
           </div>
 
           {/* Desktop Menu */}

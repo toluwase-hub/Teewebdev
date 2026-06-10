@@ -20,7 +20,7 @@ const Fact = () => {
 
     
     <h1 className='text-center font-bold text-[#D4A] text-xl lg:text-2xl '>Facts</h1>
-    <h1 className='text-center text-2xl lg:text-4xl font-bold text-black/80 '>Facts About Tee Website Coder</h1>
+    <h1 className='text-center text-2xl lg:text-4xl font-bold text-black/80 '>Facts About Tee Website Dev</h1>
      <div className='border-t-3  border-[#D4A] w-20 '></div>
     </div>
     <div className='grid grid-cols-2 lg:grid-cols-4 mt-15 reveal3'>

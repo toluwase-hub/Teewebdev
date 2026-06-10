@@ -29,7 +29,7 @@ const Frontendservice = () => {
   return (
     <div className="contains py-15 ">
       <h1 className="text-center font-bold text-[#D4A] text-xl lg:text-2xl mb-2">
-        TEE WEBSITE CODER PRICING
+        TEE WEBSITE DEV PRICING
       </h1>
       <div className="flex flex-col  items-center gap-6">
         <h1 className="text-2xl lg:text-4xl font-bold text-black/80 text-center">

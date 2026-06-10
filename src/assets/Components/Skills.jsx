@@ -22,7 +22,7 @@ const Skills = () => {
             Our Skills
         </h1>
         <div className='flex flex-col  items-center gap-6 reveal6'>
-            <h1 className='text-2xl lg:text-4xl font-bold text-black/80 text-center'> Tee Website Coder Skills</h1>
+            <h1 className='text-2xl lg:text-4xl font-bold text-black/80 text-center'> Tee Website Dev Skills</h1>
             <div className='border-t-3  border-[#D4A] w-20 '></div>
             <h1 className='text-center'>We are highly proficient in HTML, CSS, Javascript,Bootstrap, Tailwind CSS, React JS.</h1>
         </div>  

@@ -43,7 +43,7 @@ const Contactusherosection = () => {
      <div className="absolute inset-0 bg-black/80"></div>
       <div className="contains absolute inset-0   items-center   flex justify-between    gap-20 text-white leading-relaxed">
             <div className='mt-8 reveal'>
-            <h1 className='text-6xl font-medium lg:text-7xl lg:font-bold' >CONTACT TEE  <span className='italic text-[#D4A] '>WEBSITE <br /></span> CODER </h1>
+            <h1 className='text-6xl font-medium lg:text-7xl lg:font-bold' >CONTACT TEE  <span className='italic text-[#D4A] '>WEBSITE <br /></span> DEV </h1>
             <h5 className='text-xl lg:text-2xl py-3'>
               <TextType
                 text={[

@@ -31,7 +31,7 @@ const Herosection = () => {
 
   return (
     <>
-      <div className="relative  ">
+      <div id="Home" className="relative   ">
         <img
           src="/images/mainheroback.jpg"
           className=" w-screen h-140 lg:h-170 object-cover"
@@ -47,7 +47,7 @@ const Herosection = () => {
               <span className="italic text-[#D4A] ">
                 WEBSITE <br />
               </span>{" "}
-              CODER{" "}
+              DEV{" "}
             </h1>
             <h5 className="text-xl lg:text-2xl py-3">
               <TextType
