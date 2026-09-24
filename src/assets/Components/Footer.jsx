@@ -117,7 +117,7 @@ const Footer = () => {
     </div>
 
     <h1 className='text-center font-light text-sm relative pt-5'>
-        © 2026 <span>Tee Website Dev</span>. All rights reserved.
+        © 2025 - {new Date().getFullYear()} <span>Tee Website Dev</span>. All rights reserved.
     </h1>
 
     </div>
